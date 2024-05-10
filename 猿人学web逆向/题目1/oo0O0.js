@@ -79,10 +79,10 @@ function oo0O0(mw)
                 'TUDBIJ'] = !![]), N = J['luAabU'](N, E), J['qlVPZg'][
             o] = N) : N = H, N
     };
-    eval(atob(window['b'])[J('0x0', ']dQW')](J('0x1', 'GTu!'), '\x27' + mw +
-        '\x27'));
+    // eval(atob(window['b'])[J('0x0', ']dQW')](J('0x1', 'GTu!'), '\x27' + mw + '\x27'));
+    eval(atob(window['b'])["replace"]("mwqqppz","1715257368000"));
     return ''
 }
 
 
-console.log(oo0O0("1715263639000"))
+console.log(oo0O0("1715257368000"))

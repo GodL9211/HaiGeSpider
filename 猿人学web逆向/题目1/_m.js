@@ -1,4 +1,4 @@
-// var window =global
+var window =global
 
 var hexcase = 0;
 var b64pad = "";
@@ -207,6 +207,20 @@ function binl2b64(d) {
     return f
 };
 
-window.f = hex_md5(mwqqppz)
+// window.f = hex_md5(mwqqppz)
 
 // console.log(hex_md5("1715257368000"))
+
+// 整合hex_md5的参数
+function get_m_value() {
+    // var _0x2268f9 = Date["parse"](new Date()) + 100000000;
+    var _0x2268f9 = Date["parse"](new Date()) + (16798545 + -72936737 + 156138192);
+    // var _0x2268f9 = 1715257368000  // 时间戳示例
+    var mwqqppz = _0x2268f9["toString"]();
+  	var m = hex_md5(mwqqppz);
+  	// var m_value = m + '丨' + _0x2268f9 / 1000;
+  	var m_value = m + '丨' + _0x2268f9 / (-1 * 3483 + -9059 + 13542);
+    return m_value;
+};
+
+console.log(get_m_value())
