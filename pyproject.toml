@@ -13,6 +13,7 @@ aiohttp = "^3.8.5"
 aiofiles = "^23.2.1"
 chardet = "^5.2.0"
 playwright = "^1.37.0"
+scrapy = "^2.11.2"
 
 
 [build-system]
