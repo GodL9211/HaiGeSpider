@@ -16,6 +16,7 @@ playwright = "^1.37.0"
 scrapy = "^2.11.2"
 jsonpath = "^0.82.2"
 loguru = "^0.7.2"
+pandas = "^2.2.2"
 
 
 [build-system]
