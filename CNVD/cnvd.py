@@ -62,13 +62,17 @@ def get_response_data(url, headers, cookies, go_params):
 
 
 def get_finally_cookies(cookies, go_params):
+
     # 方法一
     # __jsl_clearance_s = execjs.compile(open("__jsl_clearance_s.js", "r", encoding="utf-8").read()).call(
     # "get__jsl_clearance_s", go_params)
-    # cookies["__jsl_clearance_s"] = __jsl_clearance_s  # 通过js脚本获取到jsl_clearance_s
-
+    __jsl_clearance_s = execjs.compile(open("final.js", "r", encoding="utf-8").read()).call("go", go_params)
+    logger.info(go_params)
+    cookies["__jsl_clearance_s"] = __jsl_clearance_s
+    logger.debug(f"cookies: {cookies}")
     # 方法二
-    cookies["__jsl_clearance_s"] = get_final_jsl_clearance(go_params)  # 通过python脚本获取到jsl_clearance_s
+    # cookies["__jsl_clearance_s"] = get_final_jsl_clearance(go_params)  # 通过python脚本获取到jsl_clearance_s
+
     return cookies
 
 
