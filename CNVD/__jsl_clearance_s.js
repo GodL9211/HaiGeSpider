@@ -54,14 +54,14 @@ function get__jsl_clearance_s(data) {
 }
 
 const _clearance = get__jsl_clearance_s(data = {
-    'bts': ['1714989175.746|0|rsB', 'VaRlTgdEZ2AW2lSq0Thr3g%3D'],
-    'chars': 'UKZxwXkPFV7emmYzHsoKnP',
-    'ct': '38bd96b0d0db210716371363b62278b3b1ae71d9',
-    'ha': 'sha1',
-    'is': true,
-    'tn': '__jsl_clearance_s',
-    'vt': '3600',
-    'wt': '1500'
+  "bts": ["1719382124.722|0|amj", "dHkz%2F5UXlIQhXQElHzQj84%3D"],
+  "chars": "cCWCwOqOAhFTbQgJiiEclm",
+  "ct": "cfa6c1b49264198b8313c8dd1c5aaa08134b4297",
+  "ha": "sha1",
+  "is": true,
+  "tn": "__jsl_clearance_s",
+  "vt": "3600",
+  "wt": "1500"
 })
 
 console.log(_clearance)
