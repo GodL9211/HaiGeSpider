@@ -75,39 +75,22 @@ class Job(Base):
     __tablename__ = 'job'
     id = Column(Integer, primary_key=True, comment="job id")
     jobName = Column(String, comment="职位名称")
-    cityName = Column(String, comment="区域")
+    cityName = Column(String, comment="城市")
+    areaDistrict = Column(String, comment="区")
+    brandName = Column(String, comment="公司名")
     salaryDesc = Column(String, comment="薪资范围")
     link = Column(String, comment="详情页链接")
-    brandName = Column(String, comment="公司名")
     desc = Column(String, comment="职位描述")
     jobLabels = Column(String, comment="职位标签")
     jobDegree = Column(String, comment="学历")
     brandScaleName = Column(String, comment="公司规模")
     brandStageName = Column(String, comment="公司发展阶段")
+    brandIndustry = Column(String, comment="公司行业")
 
 
-# 使用示例
 if __name__ == "__main__":
     # 创建数据库实例
     db = SQLAlchemyDB('sqlite:///boss_job.db', echo=True)
 
     # 创建表
     db.create_all()
-
-    # # 插入数据
-    # db.add(User(name='Alice', age=30))
-    # db.add_all([
-    #     User(name='Bob', age=25),
-    #     User(name='Charlie', age=35)
-    # ])
-    #
-    # # 查询数据
-    # with db.session_scope() as session:
-    #     user = session.query(User).filter_by(name='Alice').first()
-    #     if user:
-    #         print(f"User: {user.name}, Age: {user.age}")
-    #
-    # with db.session_scope() as session:
-    #     all_users = session.query(User).all()
-    #     for user in all_users:
-    #         print(f"User: {user.name}, Age: {user.age}")
